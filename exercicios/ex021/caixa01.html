@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Boxlevel</title>
+    <style>
+        h1 { /* box-level - para transformar um box-level em inline-level é só aplicae ( display: inline; ) dentro do h1 e antes da primeira linha de comando */
+
+            background-color: grey;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: blue;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            /*
+            Para simplificar as medidas podem ser usadas da seguinte forma
+           
+            padding: 10px ( para todas as medidas)
+            padding: 10px 20px ( para cima baixo, e lado lado)
+            padding: 10px 10px 10px 10px (cima dir baixo esq)
+            */
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 30px;
+            margin-left: 10px;
+
+            /*
+            Para simplificar as margens podem ser usadas da seguinte forma
+            
+            margin: 10px ( para todas as medidas)
+            margin: 10px 20px ( para cima baixo, e lado lado)
+            margin: 10px 10px 10px 10px (cima dir baixo esq)
+            
+            para centralizar as margens fazemos da seguinte forma
+
+            margin: 20px auto 40px auto
+
+            automaticamente a caixa box é centralizada na viewport
+            */
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: blueviolet;
+
+        }
+
+        a { /* inline-level para transformar um inline-level em box-level é só aplicae ( display: block; ) dentro do a { e antes da primeira linha de comando */
+           
+            border-width: 10px;
+            border-style: solid;
+            border-color: rgb(38, 116, 116);
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Prágrafo também são exemplos de box-level, mas os <a href="">links são exemplos de inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
