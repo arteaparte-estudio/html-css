@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
-                <li><a href="#">Opção 1</a></li>
-                <li><a href="#">Opção 2</a></li>
-                <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 5</a></li>
+                <li><a href="#">Quadro Café</a></li>
+                <li><a href="#">Quadro Vinho</a></li>
+                <li><a href="#">Quadro Gourmet</a></li>
+                <li><a href="#">Quadro Família</a></li>
+                <li><a href="#">Quadro Bike</a></li>
             </ul>
         </menu>
     </header>
@@ -31,5 +33,15 @@
 
         </article>
     </main>
+    <script>
+        function clickMenu() {
+          if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+          } else {
+            itens.style.display = 'block'
+          }
+            
+        }
+    </script>
 </body>
 </html>
