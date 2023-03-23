@@ -29,6 +29,7 @@ i#burguer {
     cursor: pointer;
 }
 
+
 i#burguer:hover {
     background-color: rgb(238, 176, 43);
     color: rgb(77, 6, 6);
